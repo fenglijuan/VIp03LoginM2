@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<!--设置网页编码处理格式为utf-8-->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="icon" href="检测到旧版本.PNG">
+<title>Java第十二课</title>
+<style type="text/css">h2,h3,h4{color:red;background:green} div#cssdiv{background:green;color:red}</style>
+<link rel="stylesheet" type="text/css" href="VIP03Css.css">
+<script>
+function testclick(content){
+	var text="被点击了";
+	alert(content+text);
+}
+</script>
+<script type="text/javascript" src="VIP03jS.js"></script>
+</head>
+<body>
+<h1  style="color:red;background-color:#000000;text-align:center">Hello HTML!</h1>
+<h2 onclick="javascript:alert('同学们晚上好')">晚上好</h2>
+<h3 onclick="testclick('青花瓷')">青花瓷</h3>
+<h4 onmouseover="javascrpit:testonMover()" onmouseout="testonMout()">色白花青的牡丹一如你初妆</h4>
+<h5>冷咖啡离开了杯垫</h5>
+<h6>will还没有女朋友</h6>
+<div id="cssdiv"  style="border-bottom-color:red">第一个&nbsp;&nbsp;&nbsp;&nbsp;分块
+<a href="http://www.baidu.com" title="点击这里可以跳转百度">访问百度
+<img src="检测到旧版本.PNG"/>
+<br />
+<img src="http://www.baidu.com/img/flexible/logo/pc/result.png"/>
+<br />
+<img src="file:///D:\testprograme\营业执照.jpg" width="80px" height="120px"/>
+</a>
+</div>
+<div>第二个                                           分块
+<br />
+<input type="text" placeholder="请输入用户名" oninput="testInput('用户名输入框')" />
+<br />
+<input type="password" placeholder="请输入密码" />
+<br />
+<input type="file" value="请上传文件" />
+<br />
+<!--submit类型用于将form表单中的input元素的内容进行提交给服务器进行处理 -->
+<input type="submit" value="登录"  onclick="testonclick()"/>
+<!--name属性来标识input type=radio的元素，让他们产生互斥的效果-->
+<input type="radio" name="西游记" value="猴子">
+<!--lable标签通常和input标签配合使用，用于显示input后的一些内容-->
+<lable>猴子</label>
+<input type="radio" name="西游记" value="八戒">
+<lable>八戒</label>
+<!--不和西游记一组，所以还可以进行选择-->
+<input type="radio" name="XXX" value="妲己">
+<lable>妲己</label>
+<input type="checkbox" value="唐僧">
+<label>唐僧</label>
+<input type="checkbox" value="沙和尚">
+<label>沙和尚</label>
+<select>
+<option>roy</option>
+<option>will</option>
+<option>卡卡</option>
+</select>
+</div>
+<span>这是一个span元素</span>
+<br />
+<span>这是另一个span元素</span>
+<p>这是一个p元素</p>
+<p class='clsp'>这是另一个p元素</p>
+<iframe src="VIP03Iframe.html" name="vip3" id="cssdiv"  height="300px" ></iframe>
+<iframe src="royVIP.html"  /></iframe>
+</body>
+</html>
